@@ -35,6 +35,6 @@ while True:
     if escolha == 'n':
         break
 system('cls')
-print(20*'=' + ' RESULTADOS ' + 20*'=')
+print(20*'*' + ' RESULTADOS ' + 20*'*')
 print(f'\n>> Quantidade de pessoas com mais de 18 anos: {maioridade}\n>> Quantidade de homens cadastrados: {homens}\n>> Quantidade de mulheres com menos de 20 anos: {mulheres}\n')
 
