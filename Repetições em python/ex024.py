@@ -7,9 +7,7 @@ C) quantas mulheres tem menos de 20 anos
 """
 from os import system
 system('cls')
-maioridade = 0 
-homens = 0
-mulheres = 0
+maioridade = homens = mulheres = 0 
 while True:
     system('cls')
     print(20*'=' + ' CADASTRO DE PESSOAS ' + 20*'=')
