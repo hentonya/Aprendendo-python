@@ -5,11 +5,8 @@ A) qual é o total gasto na compra.
 B) quantos produtos custam mais de R$1000.
 C) qual é o nome do produto mais barato.
 """
-total = 0
-cont2 = 0
-cont1 = 0 
+total = cont2 = cont1 = preço_barato = 0
 barato = ''
-preço_barato = 0
 while True:
     produto = str(input('\nNome do produto: ')).strip().upper()
     preço = float(input('Preço do produto: R$ '))
@@ -24,12 +21,9 @@ while True:
             barato = produto
             preço_barato = preço
     cont1 += 1 
-    escolha = str(input('Quer continuar ? [S/N] ')).strip().lower()[0]
-    if escolha not in 'sn':
-        while True:
-            escolha = str(input('Quer continuar ? [S/N] ')).strip().lower()[0]
-            if escolha in 'sn':
-                break
+    escolha = ' '
+    while escolha not in 'sn':
+        escolha = str(input('Quer continuar ? [S/N] ')).strip().lower()[0]
     if escolha == 'n':
         break
 print('\n'+20*'='+' Fim do programa ' + 20*'='+'\n')
