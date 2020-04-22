@@ -13,13 +13,9 @@ while True:
     total += preço
     if preço > 1000:
         cont2 += 1 
-    if cont1 == 0:
+    if cont1 == 0 or preço < preço_barato:
         barato = produto
         preço_barato = preço
-    else:
-        if preço < preço_barato:
-            barato = produto
-            preço_barato = preço
     cont1 += 1 
     escolha = ' '
     while escolha not in 'sn':
