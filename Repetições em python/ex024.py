@@ -14,24 +14,18 @@ while True:
     system('cls')
     print(20*'=' + ' CADASTRO DE PESSOAS ' + 20*'=')
     idade = int(input('\nIdade: '))
-    sexo = str(input('Sexo: [M/F] ')).strip().lower()[0]
-    if sexo not in 'mf':
-        while True:
-            sexo = str(input('Sexo: [M/F] ')).strip().lower()[0]
-            if sexo in 'mf':
-                break
+    sexo = ' '
+    while sexo not in 'mf':
+        sexo = str(input('Sexo: [M/F] ')).strip().lower()[0]
     if idade >= 18:
         maioridade += 1 
     if sexo == 'm':
         homens += 1
     if sexo == 'f' and idade < 20:
         mulheres += 1
-    escolha = str(input('Quer continuar ? [S/N] ')).strip().lower()[0]
-    if escolha not in 'sn':
-        while True:
-            escolha = str(input('Quer continuar ? [S/N] ')).strip().lower()[0]
-            if escolha in 'sn':
-                break  
+    escolha = ' '
+    while escolha not in 'sn':
+        escolha = str(input('Quer continuar ? [S/N] ')).strip().lower()[0]  
     if escolha == 'n':
         break
 system('cls')
