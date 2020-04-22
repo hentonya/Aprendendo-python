@@ -9,7 +9,7 @@ valor = int(input('Valor do saque ? R$ '))
 quantidade = 0 
 for c in range (0,4):
     quantidade = valor // cédulas[c]
-    print(f'Total de {quantidade } cédulas de R$ {cédulas[c]}')
     valor = valor - quantidade * cédulas[c]
-    if valor == 0:
-        break
+    if quantidade != 0:
+        print(f'Total de \033[31m{quantidade }\033[m cédulas de R$ \033[31m{cédulas[c]}\033[m')
+
