@@ -12,4 +12,4 @@ for c in range (0,4):
     valor = valor - quantidade * cédulas[c]
     if quantidade != 0:
         print(f'Total de \033[31m{quantidade }\033[m cédulas de R$ \033[31m{cédulas[c]}\033[m')
-
+        
