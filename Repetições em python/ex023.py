@@ -5,10 +5,15 @@ vitorias = 0
 while True:
     jogador = int(input('Digite um número: '))
     escolha = str(input('Par ou ímpar ? [P/I] ')).strip().lower()[0]
+    if escolha not in 'pií':
+        while True:
+            escolha = str(input('Par ou ímpar ? [P/I] ')).strip().lower()[0]
+            if escolha in 'pií':
+                break    
     if escolha == 'í':
         escolha = 'i'
-    computador = randint(1,10)
-    print(f'Você jogou {jogador} e o computador jogou {computador}\nO total é {jogador + computador}')
+    computador = randint(0,10)
+    print(f'\nVocê jogou {jogador} e o computador jogou {computador}\nO total é {jogador + computador}')
     if (jogador + computador) % 2 == 0:
         resultado = 'p'
     else:
@@ -18,4 +23,4 @@ while True:
         print('\nPARABÉNS !, você venceu\nVamos jogar novamente')
     else:
         break
-print(f'GAME OVER\nVocê ganhou {vitorias} vezes')
+print(f'\nGAME OVER\nTotal de vitórias consecutivas: {vitorias}')
