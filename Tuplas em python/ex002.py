@@ -21,6 +21,4 @@ for posição, time in enumerate(times[16:]):
 print('\n>>> TIMES EM ORDEM ALFABÉTICA:\n')
 for  time in sorted(times):
     print(f'{time}')
-print('\n>>> O CHAPECOENSE ESTÁ NA {}º POSIÇÃO\n'.format(times.index('Chapecoense') + 1 ))
-
-
+print(f'\n>>> O CHAPECOENSE ESTÁ NA {times.index("Chapecoense") + 1}º POSIÇÃO\n')
