@@ -1,2 +1,2 @@
-# Aprendendo python
- Resoluções de exercícios básicos, meus primeiros passos com python
+# Aprendendo Python
+ Resoluções de exercícios básicos, meus primeiros passos com Python
